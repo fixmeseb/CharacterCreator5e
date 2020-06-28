@@ -1,0 +1,8 @@
+Drow|Player's Handbook
+{1}-Ability Score Increase. Your Charisma score increases by 1.-<Charisma,1>
+{1}-Superior Darkvision. Your darkvision has a radius of 120 feet.-#Superior Darkvision#
+:F:-{1}-Sunlight Sensitivity. You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to percieve is in direct sunlight.
+:F:-{1}-Drow Magic. You know the dancing lights cantrip and can cast it at will. Starting from 3rd level, you can cast the faerie fire spell once. Starting from 5th level, you can cast the darkness spell once. Charisma is your spellcasting ability for these spells. You regain expended uses of this trait when you complete a long rest.-'1,0,Charisma,Dancing Lights'
+{3}-Drow Magic Continued.-'1,1,Charisma,Faerie Fire (once per long rest).'
+{5}-Drow Magic Continued.-'1,1,Charisma,Darkness (once per long rest).'
+{1}-Drow Weapon Training. You have proficiency with rapiers, shortswords, and hand crossbows.-=Rapier=-=Shortsword=-=Hand Crossbow=

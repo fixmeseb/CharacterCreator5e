@@ -1,0 +1,3 @@
+Mountain Dwarf|Player's Handbook
+{1}-Ability Score Increase. Your Strength score increases by 2.-<Strength,2>
+{1}-Dwarven Armor Training. You have proficiency with light and medium armor.-=Light Armor=-=Medium Armor=

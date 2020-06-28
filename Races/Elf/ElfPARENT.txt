@@ -1,0 +1,9 @@
+Elf|Player's Handbook
+{1}-Ability Score Increase. Your Dexterity score increases by 2.-<Dexterity,2>
+{1}-Speed. Your base walking speed is 30 feet.-_30_
+{1}-Darkvision. Accustimed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.-#Darkvision#
+{1}-Keen Senses. You have proficiency in the Perception Skill.-[Perception]
+:F:-{1}-Fey Ancestry. You have advantage on saving throws against being charmed, and magic cannot put you to sleep.-@Being charmed@
+:F:-{1}-Trance. Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
+{1}-Languages. You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.-;Elvish;-;Common;
+:C:-{1}-Subrace. You must choose a subrace from the following choices: Drow, Eladrin, High Elf, Mark of Shadow, Pallid Elf, Sea Elf, Shadar-kai, or Wood Elf.

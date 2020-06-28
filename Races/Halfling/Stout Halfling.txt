@@ -1,0 +1,3 @@
+Stout Halfling|Player's Handbook
+{1}-Ability Score Increase. Your Constitution increases by 1.-<Constitution,1>
+:F:-{1}-Stout Resilience. You have advantage on saving throws against poision, and you have resistance against poison damage.-@Being poisoned@-^Poison damage^

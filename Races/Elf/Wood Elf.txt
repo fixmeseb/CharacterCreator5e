@@ -1,0 +1,5 @@
+Wood Elf|Player's Handbook
+{1}-Ability Score Increase. Your Wisdom score increases by 1.-<Wisdom,1>
+{1}-Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.-=Longsword=-=Shortsword=-=Shortbow=-=Longbow=
+{1}-Fleet of Foot. Your base walking speed increases to 35 feet.-_35_
+:F:-{1}-Mask of the Wild. You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.

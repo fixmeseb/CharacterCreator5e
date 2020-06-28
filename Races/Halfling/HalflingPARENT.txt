@@ -1,0 +1,8 @@
+Halfling|Player's Handbook
+{1}-Ability Score Increase. Your Dexterity score increases by 2.<Dexterity,2>
+{1}-Speed. Your base walking speed is 25 feet.-_25_
+:F:-{1}-Lucky: When you roll a 1 on the d20 for an Attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
+:F:-{1}-Brave. You have advantage on saving throws against being frightened.-@Being frightened@
+:F:-{1}-Halfling Nimbleness: You can move through the space of any creature that is of a size larger than yours.
+{1}-Languages: You can speak, read, and write Common and Halfling. The Halfling language isn’t Secret, but Halflings are loath to share it with others. They write very little, so they don’t have a rich body of literature. Their oral tradition, however, is very strong. Almost all Halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling.-;Halfling;-;Common;
+:C:-{1}-You must choose a subrace from the following choices: Ghostwise Halfling, Lightfoot Halfling, Lotusden Halfling, Mark of Healing, Mark of Hospitality, or Stout Halfling.

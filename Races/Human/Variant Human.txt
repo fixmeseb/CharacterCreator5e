@@ -1,0 +1,4 @@
+Human (Variant)|Player's Handbook
+:C:-{1}-Ability Score Increase. Two different ability scores of your choice increase by 1.-<Any,1>-<AnyNon1,1>
+:C:-{1}-Skills. You gain proficiency in one skill of your choice.-[Any]
+:C:-{1}-Feat. You gain one feat of your choice.

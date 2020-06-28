@@ -1,0 +1,6 @@
+Champion|Player's Handbook
+:F:-{3}-Beginning when you choose this archetype at 3rd Level, your weapon attacks score a critical hit on a roll of 19 or 20.
+:F:-{7}-Remarkable Athlete. Starting at 7th level, you can add half your Proficiency Bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn’t already use your Proficiency Bonus (not included on your character sheet). In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.
+:CF:-{10}-Additional Fighting Style. At 10th level, you can choose a second option from the Fighting Style class feature.-%Archery/Defense/Dueling/Great Weapon Fighting/Protection/Two-Weapon Fighting%
+:F:-{15}-Superior Critical. Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20.
+:C:-{18}-Survivor. At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain Hit Points equal to 5 + your Constitution modifier if you have no more than half of your Hit Points left. You don’t gain this benefit if you have 0 Hit Points.

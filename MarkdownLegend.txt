@@ -1,0 +1,21 @@
+Hello, and welcome to the markdown legend! I'm completely making up the markdown format as I go, so I figured I might as well let you know how I do it!
+Races:
+-: Used for seperating tags and descriptions.
+{LEVEL}: Indictates the level that a feature is unlocked at.
+:C:- Indictates a choice to be made, such as feature or skill. Generally one or more of the trailing tags will be listed as ANY, indictating the choice to be made. The alternative is a "/" which indictates the options to be choosen from.
+:F:- Indictates a feature that must be listed on the character sheet. These are generally the features that affect role playing or some non-numbers crunching item.
+:CF:- Indictates both :C: and :F:. 
+Ability Score Increases: <SCORE,INCREASEAMOUNT,QUANTITY>. Score is the score to be increased, increase amount is the amount to be increased by. QUANTITY is an optional quantity for the number of ability scores increased. The SCORE value must be ANY and the QUANTITY values must all be different.
+Speed: The walking speed. Indictated by _AMOUNT_, where AMOUNT is the speed. 
+Sight: #SIGHT# is the sight, where SIGHT is the possible sight choices. 
+@CONDITION@: advantage on saving throws versus certain conditions, such as being poisoned or being charmed. CONDITION is the condition.
+^RESISTANCE^: resistance against certain types of damage, where RESISTANCE is the type of damage. 
+=PROFICIENCY=: Proficiency with certain tools, where PROFICIENCY is the Proficiency. 
+;LANGUAGE;- Indictates a language spoken by the race, where LANGUAGE is the language. 
+'QUANTITY,LEVEL,SPELLLISTMODIFIER,SPELLNAME': Spellcasting. QUANTITY is the number of spells (generally one), LEVEL is the spell level, SPELLLISTMODIFIER is the spell class/modifier, and SPELLNAME is the name of the spell (or any if it's a choice). 
+Skills: [SKILL,QUANTITY]. SKILL is the skill (or skills, seperated by "/") and QUANTITY is the number of skills out of that list chosen. Note that a skill cannot be chosen twice.
+%FIGHTINGSTYLE%- Fighting styles. See the FightingStyles folder for the choices of fighting styles.
+Classes:
++dx+- the hit dice of the class.
+~SAVINGTHROW~- SAVINGTHROW is the ability that the the class is proficient in saving throws for.
+|ABILITY|- Signifies an ability score improvement/feat choice. 

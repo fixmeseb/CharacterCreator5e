@@ -1,0 +1,4 @@
+Eladrin (Variant)|Dungeon Master's Guide
+{1}-Ability Score Increase. Your Intelligence score increases by 1.-<Intelligence,1>
+{1}-Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.-=Longsword=-=Shortsword-=Shortbow=-=Longbow=
+:F:-{1}-Fey Step. You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.-'1,2,Intelligence,Fey Step (once per rest)'

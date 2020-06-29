@@ -1,0 +1,6 @@
+Pallid Elf|Explorer's Guide to Wildemount
+{1}-Ability Score Increase. Your Wisdom score increases by 1.-<Wisdom, 1>
+:F:-{1}-Incisive Sense. You have advantage on Investigation and Insight checks.
+:F:-{1}-Blessing of the Moonweaver. You know the Light cantrip. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest. You do not need the material components required of the spells. Wisdom is your spellcasting ability for these spells.-'1,0,Wisdom,Light'
+{3}-Improved Blessing of the Moonweaver. When you reach 3rd level, you can cast Sleep once, and it recharges after a long rest.-'1,1,Wisdom,Sleep (once per long rest)'
+{5}-Improved Blessing of the Moonweaver. When you reach 5th level, you can cast Invisibility (Self Only) once, and it recharges after a long rest.-'1,2,Wisdom,Invisibility (self only, once per long rest)'

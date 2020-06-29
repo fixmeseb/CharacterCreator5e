@@ -1,0 +1,9 @@
+Bugbear|Volo's Guide to Monsters
+{1}-Ability Score Increase. Your Strength score increases by 2, and your Dexterity score increases by 1.-<Strength,2>-<Dexterity,1>
+{1}-Speed. Your base walking speed is 30 feet.-_30_
+{1}-Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.-#Darkvision#
+:F:-{1}-Long-Limbed. When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.
+:F:-{1}-Powerful Build. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.
+{1}-Sneaky. You are proficient in the Stealth skill.-[Stealth]
+:F:-{1}-Surprise Attack. If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra 2d6 damage to it. You can use this trait only once per combat.
+{1}-Languages. You can speak, read, and write Common and Goblin.-;Common;-;Goblin;

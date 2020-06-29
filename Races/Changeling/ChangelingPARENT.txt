@@ -1,0 +1,6 @@
+Changeling|Eberron: Rising from the Last War
+{1}-Ability Score Increase. Your Charisma score increases by 2. In addition, one ability score of your choice increases by 1.-<Charisma,2>-<Any,1>
+{1}-Speed. Your base walking speed is 30 feet.-_30_
+:F:-{1}-Change Appearance. As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of a creature you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use an action to revert to your true form or until you die.
+:C:-{1}-Changeling Instincts. You gain proficiency with two of the following skills of your choice: Deception,Insight, Intimidation, and Persuasion.-[Deception/Insight/Intimidation/Persuasion,2]
+{1}-Languages. You can speak, read, and write Common and two other languages of your choice.-;Common;-;Any;-;Any;

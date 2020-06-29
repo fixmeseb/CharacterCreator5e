@@ -1,0 +1,7 @@
+Duergar|Sword Coast Adventurer's Guide
+{1}-Ability Score Increase. Your Strength score increases by 1.-<Strength,1>
+{1}-Superior Darkvision. Your darkvision has a radius of 120 feet.-#Superior Darkvision#
+{1}-Extra Language. You can speak, read, and write Undercommon.-;Undercommon;
+{1}-Duergar Resilience. You have advantage on saving throws against illusions and against being charmed or paralyzed.-@Against illusions@-@Being charmed@-@Being paralyzed@
+:F:-{3}-Duergar Magic. When you reach 3rd level, you can cast the enlarge/reduce spell on yourself once with this trait, using only the spell’s enlarge option. When you reach 5th level, you can cast the invisibility spell on yourself once with this trait. You don’t need material components for either spell, and you can’t cast them while you’re in direct sunlight. You must finish a long rest to cast them on yourself once again with this trait. Intelligence is your spellcasting ability for these spells.-'1,2,Intelligence,Enlarge/Reduce (enlarge only, self)'
+{5}-Duergar Magic Pt. 2.-'1,2,Intelligence,Invisibility (self only)'

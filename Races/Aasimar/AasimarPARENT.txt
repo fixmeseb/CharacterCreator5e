@@ -1,0 +1,8 @@
+Aasimar|Volo's Guide to Monsters
+{1}-Ability Score Increase. Your Charisma score increases by 2.-<Charisma,2>
+{1}-Speed. Your base walking speed is 30 feet.-_30_
+{1}-Darkvision. Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.-#Darkvision#
+{1}-Celestial Resistance. You have resistance to necrotic damage and radiant damage.-^Necrotic^-^Radiant^
+{1}-Healing Hands. As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.
+{1}-Light Bearer. You know the Light cantrip. Charisma is your spellcasting ability for it.-'1,0,Charisma,Light'
+{1}-Languages. You can speak, read, and write Common and Celestial.-;Common;-;Celestial;

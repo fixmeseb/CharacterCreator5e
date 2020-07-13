@@ -6,7 +6,7 @@ Races:
 :F:- Indictates a feature that must be listed on the character sheet. These are generally the features that affect role playing or some non-numbers crunching item.
 :CF:- Indictates both :C: and :F:. 
 Ability Score Increases: <SCORE,INCREASEAMOUNT,QUANTITY>. Score is the score to be increased, increase amount is the amount to be increased by. QUANTITY is an optional quantity for the number of ability scores increased. The SCORE value must be ANY and the QUANTITY values must all be different.
-Speed: The walking speed. Indictated by _AMOUNT_, where AMOUNT is the speed. 
+Speed: The walking speed. Indictated by _AMOUNT,TYPE_, where AMOUNT is the speed. TYPE is the type of speed for swimming or flying, or is left blank for walking speed.
 Sight: #SIGHT# is the sight, where SIGHT is the possible sight choices. 
 @CONDITION@: advantage on saving throws versus certain conditions, such as being poisoned or being charmed. CONDITION is the condition.
 ^RESISTANCE^: resistance against certain types of damage, where RESISTANCE is the type of damage. 

@@ -1,0 +1,6 @@
+Fire Genasi|Elemental Evil's Player Companion
+{1}-Ability Score Increase. Your Intelligence score increases by 1.-<Intelligence,1>
+:F:-{1}-Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red.-#Darkvision#
+{1}-Fire Resistance. You have resistance to fire damage.-^Fire Damage^
+:F:-{1}-Reach to the Blaze. You know the produce flame cantrip. Once you reach 3rd level, you can cast the burning hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.-'1,0,Constitution,Produce Flame'
+{3}-Improved Reach to the Blaze.-'1,1,Constitution,Burning Hands (once per long rest)'

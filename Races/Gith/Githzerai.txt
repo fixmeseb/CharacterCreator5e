@@ -1,0 +1,6 @@
+Githzerai|Mordenkainen's Tomb of Foes
+{1}-Ability Score Increase. Your Wisdom score increases by 2.-<Wisdom,2>
+{1}-Mental Discipline. You have advantage on saving throws against the charmed and frightened conditions. Under the tutelage of monastic masters, githzerai learn to govern their own minds.-@Charmed@-@Frightened@
+:F:-{1}-Githzerai Psionics. You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Shield spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Detect Thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.-'1,0,Wisdom,Mage Hand (invisible hand)'
+{3}-Improved Githzerai Psionics.-'1,1,Wisdom,Shield (once per long rest)'
+{5}-Improved Githzerai Psionics-'1,2,Wisdom,Detect Thoughts (once per long rest)'

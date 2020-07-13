@@ -1,0 +1,2 @@
+Aquatic Half-Elf|Sword Coast Adventurer's Guide
+:F:-{1}-Child of the Sea. You have a swimming speed of 30 feet.-_30,Swim_

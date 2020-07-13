@@ -1,0 +1,4 @@
+Air Genasi|Elemental Evil's Player Companion
+{1}-Ability Score Increase. Your Dexterity score increases by 1.-<Dexterity,1>
+:F:-{1}-Unending Breath. You can hold your breath indefinitely while you’re not incapacitated.
+:F:-{1}-Mingle with the Wind. You can cast the levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.-'1,2,Constitution,Levitate (once per long rest)'

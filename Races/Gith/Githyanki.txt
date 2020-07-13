@@ -1,0 +1,7 @@
+Githyanki|Mordenkainen's Tomb of Foes
+{1}-Ability Score Increase. Your Strength score increases by 2.-<Strength,2>
+:C:-{1}-Decadent Mastery. You learn one language of your choice, and you are proficient with one skill or tool of your choice. In the timeless city of Tu'narath, githyanki have bountiful time to master odd bits of knowledge.-;Any;-=Any=/[Any,1]
+{1}-Martial Prodigy. You are proficient with light and medium armor and with shortswords, longswords, and greatswords.-=Light Armor=-=Medium Armor=-=Shortsword=-=Longsword=-=Greatsword=
+:F:-{1}-Githyanki Psionics. You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Jump spell once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Misty Step spell once with this trait, and you regain the ability to do so when you finish a long rest. Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.-'1,0,Intelligence,Mage Hand (invisible hand)'
+{3}-Improved Githyanki Psionics.-'1,1,Intelligence,Jump (once per long rest)'
+{5}-Improved Githyanki Psionics-'1,2,Intelligence,Misty Step (once per long rest)'

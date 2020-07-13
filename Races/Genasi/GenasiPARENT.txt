@@ -1,0 +1,4 @@
+Genasi|Elemental Evil's Player Companion
+{1}-Languages. You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants.-;Common;-;Primordial;
+{1}-Ability Score Increase. Your Constitution score increases by 2.-<Constitution,2>
+{1}-Speed. Your base walking speed is 30 feet.-_30_

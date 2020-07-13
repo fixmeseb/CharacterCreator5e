@@ -1,0 +1,4 @@
+Forest Gnome|Player's Handbook
+{1}-Ability Score Increase. Your Dexterity score increases by 1.-<Dexterity,1>
+{1}-Natural Illusionist. You know the minor illusion cantrip. Intelligence is your spellcasting ability for it.-'1,0,Intelligence,Minor Illusion'
+{1}-Speak with Small Beasts. Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets.

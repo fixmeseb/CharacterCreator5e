@@ -1,0 +1,4 @@
+Gith|Mordenkainen's Tomb of Foes
+{1}-Ability Score Increase. Your Intelligence score increases by 1.-<Intelligence,1>
+{1}-Speed. Your base walking speed is 30 feet.-_30_
+{1}-Languages. You can speak, read, and write Common and Gith.-;Common;-;Gith;

@@ -1,0 +1,3 @@
+Ghostwise Halfling|Sword Coast Adventurer's Guide
+{1}-Ability Score Increase. Your Wisdom score increases by 1.-<Wisdom,1>
+:F:-{1}-Silent Speech. You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time.

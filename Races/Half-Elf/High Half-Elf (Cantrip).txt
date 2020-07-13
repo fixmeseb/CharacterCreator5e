@@ -1,0 +1,2 @@
+Half-High Elf|Sword Coast Adventurer's Guide
+:C:-{1}-Cantrip. You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcastig ability for it.-'1,0,Wizard,Any'

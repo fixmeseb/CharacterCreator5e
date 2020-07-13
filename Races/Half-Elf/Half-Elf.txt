@@ -1,0 +1,2 @@
+Half-Elf|Player's Handbook
+:C:-{1}-Skill Versatility. You gain proficiency in two skills of your choice.-[Any,2]

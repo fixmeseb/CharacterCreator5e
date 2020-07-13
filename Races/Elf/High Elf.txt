@@ -1,5 +1,5 @@
 High Elf|Player's Handbook
 {1}-Ability Score Increase. Your Intelligence score increases by 1.-<Intelligence,1>
 {1}-Elf Weapon Training. You have proficiency with the longsword, shortsword, shortbow, and longbow.-=Longsword=-=Shortsword=-=Shortbow=-=Longbow=
-:C:-{1}-Cantrip. You know one crantrip of your choice from the wizard spell list. Intelligence is your spellcastig ability for it.-'1,0,Wizard,Any'
-:C:-{1}-Extra Language. you can speak, read, and write one extra language of your choice.-;ANY;
+:C:-{1}-Cantrip. You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcastig ability for it.-'1,0,Wizard,Any'
+:C:-{1}-Extra Language. You can speak, read, and write one extra language of your choice.-;Any;

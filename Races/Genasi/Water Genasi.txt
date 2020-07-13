@@ -1,0 +1,7 @@
+Water Genasi|Elemental Evil's Player Companion
+{1}-Ability Score Increase. Your Wisdom score increases by 1.-<Wisdom,1>
+{1}-Acid Resistance. You have resistance to acid damage.-^Acid Damage^
+:F:-{1}-Amphibious. You can breathe air and water.
+{1}-Swim. You have a swimming speed of 30 feet.-_30,Swim_
+:F:-{1}-Call to the Wave. You know the shape water cantrip. When you reach 3rd level, you can cast the create or destroy water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.-'1,0,Constitution,Shape Water'
+{3}-Improved Call to the Wave.-'1,2,Constitution,Create or Destroy Water (as a second level spell, once per long rest.)'

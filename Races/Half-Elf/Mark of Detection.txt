@@ -1,0 +1,6 @@
+Mark of Detection Half-Elf|Eberron: Rising from the Last War
+:C:-{1}-Ability Score Increase. Your Wisdom score increases by 2, and one other ability score of your choice increase by 1.-<Wisdom,2>-<Any,1,1>
+:F:-{1}-Deductive Intuition. When you make an Intelligence (Investigation) or a Wisdom (Insight) check, you can roll a d4 and add the number rolled to the ability check.
+:F:-{1}-Magical Detection. You can cast the detect magic and detect poison and disease spells with this trait. Starting at 3rd level, you can also cast the see invisibility spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't require material components for them.-'1,0,Intelligence,Detect Magic'-'1,0,Intelligence,Detect Poison and Disease'
+{3}-Improved Magical Detection.-'0,2,Intelligence,See Invisibility'
+:F:-{1}-Spells of the Mark. If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Detection Spells table are added to the spell list of your spellcasting class.-$Detect Evil and Good,1$-$Detect Poison and Disease,1$-$Detect Thoughts,2$-$Find Traps,2$-$Clarivoyance,3$-$Nondetection,3$-$Arcane Eye,4$-$Divination$-$Legend Lore,5$

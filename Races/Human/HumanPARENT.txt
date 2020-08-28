@@ -1,3 +1,2 @@
 Human|Player's Handbook
 {1}-Speed. Your base waking speed is 30 feet.-_30_
-:C:-{1}-Languages: You can speak, read, and write Common and one extra language of your choice. Humans typically learn the Languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their Speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish Military phrases, and so on.-;Common;-;Any;

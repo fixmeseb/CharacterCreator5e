@@ -66,8 +66,9 @@ for classer in parentClasses:
     classi[classer] = subclasses
 #Creates a "classes" dict that contains the names and subclasses of the subclasses. 
 #Format is that the class name is the key and a list of subclasses is the value. 
-
-path = "C:\\Users\\Sebastian_Polge\\OneDrive-CaryAcademy\\Documents\\meNewBot\\extensions\\CharacterCreator5e\\Backgrounds"
+pathFile = open("token.txt", "r")
+pathin = pathFile.readline()
+path = pathin
 backgrounds = []
 for file in os.listdir(path): 
     if os.path.isfile(os.path.join(path, file)):
@@ -391,6 +392,4 @@ for choice in choices:
                         languages.append(newLang)
                         newLanguages.remove(newLang)
                         validLang = True
-        else:
-            if tagIdentify == "=":
-                
+

@@ -1,0 +1,17 @@
+Where to go from here!
+-First off, I want to finish off the character sheet choices.
+-Kinda concurrently, I want to add the other classes and races. I say concurrently because that one's kinda low brain power for me so I can do it on the weekends or at night easier, while the actual coding takes more energy. 
+-I want to afterwards add equipment to this.
+-Next, I want to add some of the homebrew options I use, particularly Modern Magic and SW5e. 
+-After that I want to create some sort of guide for creating your own classes and stuff for this. 
+-Finally get it prepped to release to the wider public so other people can use this. 
+-Maybe add a GUI? 
+-Maybe have it export to PDF files?
+
+I reckon if I really buckle down, I can finish the first step off in one-two weeks. 
+The second step should take about the same amount of time- I'm going to aim for three weeks for that one. 
+Third steps another 2 weeks I'd say, bringing us to a total of 5 weeks. 
+Homebrew stuff should be another week, so 6 weeks out. 
+That guide should be maybe a day? Not really worth mentioning. 
+The release is one more week- 7 weeks. 
+And I have literally no idea about the GUI and PDF stuff. I've never really done anything with either, so I can't really estimate that. 

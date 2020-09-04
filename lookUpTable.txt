@@ -1,0 +1,16 @@
+lookUpTable = {
+    "<":"Score Increase",
+    "_":speeds,
+    "#":sights,
+    "@":savingThrowConditionAdvantages,
+    "^":damageResistances,
+    "=":toolsWeapons,
+    ";":languages,
+    "'":spells,
+    "[":skills,
+    "%":fightingStyles,
+    "+":hitDiceType,
+    "~":savingThrowProfs,
+    "|":abilityImprovFeatQuant,
+    "$":spellListExtra
+}

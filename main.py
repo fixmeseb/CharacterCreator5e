@@ -1,38 +1,20 @@
 import os
 from wizardSpells import spells
-from weapons import weapons
+
+from DnDLists import damageTypes
+from DnDLists import languagesDungeonsAndDragons
+from DnDLists import skillsDungeonsAndDragons
+from DnDLists import artisanTools
+from DnDLists import gamingSets
+from DnDLists import musicalInstruments
+from DnDLists import toolsMaster
+from DnDLists import weapons
 sources = ["Dungeons & Dragons Official", "Unearthed Arcana", "SW5e", "Homebrew"]
 
 testingThing = ["Elf", "Drow", "Fighter-02", "Acolyte", "Dexterity", "Charisma", "Constitution", "Strength", "Wisdom", "Intelligence"]
 test = 0
 testBool = 0
 
-languagesDungeonsAndDragons = ["Common", "Elvish", "Dwarvish", "Giant", "Gnomish", "Goblin", "Halfling", "Orc", "Abyssal", "Celestial", "Deep Speech", "Draconic", "Infernal", "Primordial", "Sylvan", "Undercommon"]
-skillsDungeonsAndDragons = {
-    "Acrobatics": False,
-    "Animal Handling": False,
-    "Arcana": False,
-    "Athletics": False,
-    "Deception": False,
-    "History": False,
-    "Insight": False,
-    "Intimidation": False,
-    "Investigation": False,
-    "Medicine": False,
-    "Nature": False,
-    "Perception": False,
-    "Performance": False,
-    "Persuasion": False,
-    "Religion": False,
-    "Sleight of Hand": False,
-    "Stealth": False,
-    "Survival": False
-}
-artisanTools = ["Alchemist's supplies", "Brewer's supplies", "Calligrapher's supplies", "Carpenter's tools", "Cartographer's tools", "Cobbler's tools", "Cook's tools", "Glassblower's tools", "Jeweler's tools", "Leatherworker's tools", "Mason's tools", "Painter's supplies", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools"]
-gamingSets = ["Dice set", "Dragonchess set", "Playing card set", "Three-Dragon Ante set"]
-musicalInstruments = ["Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan flute", "Shawm", "Viol"]
-
-toolsMaster = ["Alchemist's supplies", "Brewer's supplies", "Calligrapher's supplies", "Carpenter's tools", "Cartographer's tools", "Cobbler's tools", "Cook's tools", "Glassblower's tools", "Jeweler's tools", "Leatherworker's tools", "Mason's tools", "Painter's supplies", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools", "Disguise kit", "Forgery kit", "Dice set", "Dragonchess set", "Playing card set", "Three-Dragon Ante set", "Herbalism kit", "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan flute", "Shawm", "Viol", "Navigator's tools", "Poisoner's kit", "Thieves' tools", "Vehicles (land or water)"]
 path = "C:\\Users\\Sebastian_Polge\\OneDrive-CaryAcademy\\Documents\\meNewBot\\extensions\\CharacterCreator5e\\Races"
 races = {}
 racialParents = []
@@ -392,4 +374,72 @@ for choice in choices:
                         languages.append(newLang)
                         newLanguages.remove(newLang)
                         validLang = True
-
+        else:
+            if tagIdentify == "@": 
+                if len(tagInfo.split(",")) > 2 or (len(tagInfo.split(",") > 1 and not (tagInfo.split(",")[0] == "Any"))):
+                    print("Choose one of the following to have advantage on saving throws against:")
+                    savingThrowOptions = []
+                    for choice in tagInfo.split(",")[0].split("/"): 
+                        print("-" + str(choice))
+                        savingThrowOptions.append(choice)
+                    choice = input("Choice? ")
+                    onOff = True
+                    while onOff == True: 
+                        if choice in savingThrowOptions:
+                            savingThrowConditionAdvantages.append(choice)
+                            onOff = False
+                        else: 
+                            print("That was incorrect. Please input a valid option.")
+                else:
+                    if len(tagInfo.split(",")) > 1:
+                        quant = int(tagInfo.split(",")[1])
+                    else:
+                        quant = 1
+                    print("Choose " + str(quant) + " of the following to have advantage on saving throws against:")
+                    for choice in damageTypes: 
+                        print("-" + str(choice))
+                    for i in range(quant):
+                        choice = input("Choice? ")
+                        onOff = True
+                        while onOff == True: 
+                            if choice in damageTypes:
+                                savingThrowConditionAdvantages.append(choice)
+                                onOff = False
+                            else: 
+                                print("That was incorrect. Please input a valid option.")
+            else: 
+                if tagIdentify == "+":
+                    #alright, look. There's almost no chance of this one happening. I'm deleting the functions that physically should not work within the rules of 5e. If someone complains, I can jury rig something? I guess? Seriously, that would be really weird. 
+                    if len(tagInfo.split(",")) > 2 or (len(tagInfo.split(",") > 1 and not (tagInfo.split(",")[0] == "Any"))):
+                        print("Choose one of the following hit dice? I guess? ")
+                        hitDiceChoices = []
+                        for choice in tagInfo.split(",")[0].split("/"): 
+                            print("-" + str(choice))
+                            hitDiceChoices.append(choice)
+                        choice = input("Choice? ")
+                        onOff = True
+                        while onOff == True: 
+                            if choice in hitDiceChoices:
+                                hitDiceType = choice
+                                onOff = False
+                            else: 
+                                print("That was incorrect. Please input a valid option.")
+                    else:
+                        if len(tagInfo.split(",")) > 1:
+                            quant = int(tagInfo.split(",")[1])
+                        else:
+                            quant = 1
+                        print("Choose " + str(quant) + " of the following to be your hit dice:")
+                        for choice in hitDiceType: 
+                            print("-" + str(choice))
+                        for i in range(quant):
+                            choice = input("Choice? ")
+                            onOff = True
+                            while onOff == True: 
+                                if choice in damageTypes:
+                                    hitDiceType = choice
+                                    onOff = False
+                                else: 
+                                    print("That was incorrect. Please input a valid option.")
+                else: 
+                    

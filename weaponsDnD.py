@@ -47,4 +47,4 @@ martialRanged = [blowgun, handcrossbow, heavycrossbow, longbow, net]
 
 martialWeapons = [martialMelee, martialRanged]
 simpleWeapons = [simpleMelee, simpleRanged]
-weapons = [martialWeapons, martialRanged]
+weapons = [simpleWeapons, martialWeapons]

@@ -1,14 +1,19 @@
 import os
-from wizardSpells import spells
+from wizardSpells import spells as wizardSpellList
 
 from DnDLists import damageTypes
-from DnDLists import languagesDungeonsAndDragons
-from DnDLists import skillsDungeonsAndDragons
+from DnDLists import languagesDungeonsAndDragons 
+from DnDLists import skillsDungeonsAndDragons as skillsMaster
 from DnDLists import artisanTools
 from DnDLists import gamingSets
 from DnDLists import musicalInstruments
-from DnDLists import toolsMaster
-from DnDLists import weapons
+from DnDLists import tools as toolsMaster
+from DnDLists import weapons as weaponsMaster
+from DnDLists import speeds as speedMaster
+from DnDLists import sights as sightsMaster
+from DnDLists import fightingStyles as fightingStylesMaster
+from DnDLists import abilityScores as abilityScoresMaster
+spellLists = {"Wizard":wizardSpellList}
 sources = ["Dungeons & Dragons Official", "Unearthed Arcana", "SW5e", "Homebrew"]
 
 testingThing = ["Elf", "Drow", "Fighter-02", "Acolyte", "Dexterity", "Charisma", "Constitution", "Strength", "Wisdom", "Intelligence"]
@@ -188,15 +193,15 @@ featuresToNote = []
 choices = []
 spells = []
 fightingStyles = []
-skills = []
-toolsWeapons = []
+skills = skillsMaster
+tools = []
 languages = []
 damageResistances = []
 savingThrowConditionAdvantages = []
 sights = []
 savingThrowProfs = []
 spellListExtra = []
-
+weapons = weaponsMaster
 
 speeds = {}
 
@@ -211,7 +216,8 @@ lookUpTable = {
     "#":sights,
     "@":savingThrowConditionAdvantages,
     "^":damageResistances,
-    "=":toolsWeapons,
+    "=":tools,
+    "!":weapons,
     ";":languages,
     "'":spells,
     "[":skills,
@@ -376,7 +382,7 @@ for choice in choices:
                         validLang = True
         else:
             if tagIdentify == "@": 
-                if len(tagInfo.split(",")) > 2 or (len(tagInfo.split(",") > 1 and not (tagInfo.split(",")[0] == "Any"))):
+                if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
                     print("Choose one of the following to have advantage on saving throws against:")
                     savingThrowOptions = []
                     for choice in tagInfo.split(",")[0].split("/"): 
@@ -391,8 +397,8 @@ for choice in choices:
                         else: 
                             print("That was incorrect. Please input a valid option.")
                 else:
-                    if len(tagInfo.split(",")) > 1:
-                        quant = int(tagInfo.split(",")[1])
+                    if len(tagInfo.split("/")) > 1:
+                        quant = int(tagInfo.split("/")[1])
                     else:
                         quant = 1
                     print("Choose " + str(quant) + " of the following to have advantage on saving throws against:")
@@ -410,7 +416,7 @@ for choice in choices:
             else: 
                 if tagIdentify == "+":
                     #alright, look. There's almost no chance of this one happening. I'm deleting the functions that physically should not work within the rules of 5e. If someone complains, I can jury rig something? I guess? Seriously, that would be really weird. 
-                    if len(tagInfo.split(",")) > 2 or (len(tagInfo.split(",") > 1 and not (tagInfo.split(",")[0] == "Any"))):
+                    if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
                         print("Choose one of the following hit dice? I guess? ")
                         hitDiceChoices = []
                         for choice in tagInfo.split(",")[0].split("/"): 
@@ -425,8 +431,8 @@ for choice in choices:
                             else: 
                                 print("That was incorrect. Please input a valid option.")
                     else:
-                        if len(tagInfo.split(",")) > 1:
-                            quant = int(tagInfo.split(",")[1])
+                        if len(tagInfo.split("/")) > 1:
+                            quant = int(tagInfo.split("/")[1])
                         else:
                             quant = 1
                         print("Choose " + str(quant) + " of the following to be your hit dice:")
@@ -442,4 +448,350 @@ for choice in choices:
                                 else: 
                                     print("That was incorrect. Please input a valid option.")
                 else: 
-                    
+                    if tagIdentify == "_":
+                        #Same deal with this one. Shouldn't work, but it could with some wack homebrew so it's all set up just in case.
+                        if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                            print("Choose one of the following speeds: ")
+                            speedChoices = []
+                            for choice in tagInfo.split("/")[0]: 
+                                if len(choice.split(",")) > 1:
+                                    print("-" + str(choice.split(",")[0]) + " (" + choice.split(",")[1] + " feet)")
+                                else: 
+                                    print("-Walking ( " + choice.split(",")[0] + ")")
+                                speedChoices.append(choice)
+                            choice = input("Choice (input only the name of the choice, not the quantity)? ")
+                            onOff = True
+                            speed = 0
+                            for i in speedChoices:
+                                iType = ""
+                                if i.split(",") > 1:
+                                    iType = i.split(",")[0]
+                                else: 
+                                    iType == "Walking"
+                                if iType == choice and i.split(",") > 1:
+                                    speed = i.split(",")[1]
+                                else:
+                                    speed = i.split(",")[0]
+                            while onOff == True: 
+                                if choice in speedChoices:
+                                    onOff = False
+                                else: 
+                                    print("That was incorrect. Please input a valid option.")
+                        else:
+                            if len(tagInfo.split(",")) > 1:
+                                quant = int(tagInfo.split(",")[1])
+                            else:
+                                quant = 1
+                            print("Choose " + str(quant) + " of the following speeds:")
+                            for choice in speedMaster: 
+                                print("-" + str(choice))
+                            for i in range(quant):
+                                choice = input("Choice? ")
+                                onOff = True
+                                while onOff == True: 
+                                    if choice in speedMaster:
+                                        speeds.append(choice)
+                                        onOff = False
+                                    else: 
+                                        print("That was incorrect. Please input a valid option.")
+                    else:
+                        if tagIdentify == "#":
+                            #And we continue the tradition of probably useless stuff. 
+                            if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                print("Choose one of the following sights. ")
+                                sightOptions = []
+                                for choice in tagInfo.split(",")[0].split("/"): 
+                                    print("-" + str(choice))
+                                    sightOptions.append(choice)
+                                choice = input("Choice? ")
+                                onOff = True
+                                while onOff == True: 
+                                    if choice in sightOptions:
+                                        sights.append(choice)
+                                        onOff = False
+                                    else: 
+                                        print("That was incorrect. Please input a valid option.")
+                            else:
+                                if len(tagInfo.split("/")) > 1:
+                                    quant = int(tagInfo.split("/")[1])
+                                else:
+                                    quant = 1
+                                print("Choose " + str(quant) + " as your sights:")
+                                for choice in sightsMaster: 
+                                    print("-" + str(choice))
+                                for i in range(quant):
+                                    choice = input("Choice? ")
+                                    onOff = True
+                                    while onOff == True: 
+                                        if choice in sightsMaster:
+                                            sights.append(choice)
+                                            onOff = False
+                                        else: 
+                                            print("That was incorrect. Please input a valid option.")
+                        else:
+                            if tagIdentify == "^": 
+                                if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                    print("Choose one of the following to have resistance to:")
+                                    resistanceDamageChoices = []
+                                    for choice in tagInfo.split(",")[0].split("/"): 
+                                        print("-" + str(choice))
+                                        resistanceDamageChoices.append(choice)
+                                    choice = input("Choice? ")
+                                    onOff = True
+                                    while onOff == True: 
+                                        if choice in resistanceDamageChoices:
+                                            damageResistances.append(choice)
+                                            onOff = False
+                                        else: 
+                                            print("That was incorrect. Please input a valid option.")
+                                else:
+                                    if len(tagInfo.split("/")) > 1:
+                                        quant = int(tagInfo.split("/")[1])
+                                    else:
+                                        quant = 1
+                                    print("Choose " + str(quant) + " of the following to have resistance to:")
+                                    for choice in damageTypes: 
+                                        print("-" + str(choice))
+                                    for i in range(quant):
+                                        choice = input("Choice? ")
+                                        onOff = True
+                                        while onOff == True: 
+                                            if choice in damageTypes:
+                                                resistanceDamageChoices.append(choice)
+                                                onOff = False
+                                            else: 
+                                                print("That was incorrect. Please input a valid option.")
+                            else:
+                                if tagIdentify == "!":
+                                    if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                        print("Choose one of the following weapons:")
+                                        weaponsChoices = []
+                                        for choice in tagInfo.split(",")[0].split("/"): 
+                                            print("-" + str(choice))
+                                            weaponsChoices.append(choice)
+                                        choice = input("Choice? ")
+                                        onOff = True
+                                        while onOff == True: 
+                                            if choice in weaponsChoices:
+                                                for simpleMartial in weapons:
+                                                    for weaponType in simpleMartial:
+                                                        for weapon in weaponType:
+                                                            if choice == weapon[0]:
+                                                                weapon[5] == True
+                                                onOff = False
+                                            else: 
+                                                print("That was incorrect. Please input a valid option.")
+                                    else:
+                                        if len(tagInfo.split("/")) > 1:
+                                            quant = int(tagInfo.split("/")[1])
+                                        else:
+                                            quant = 1
+                                        print("Choose " + str(quant) + " of the following weapons:")
+                                        for simpleMartial in weapons:
+                                            for weaponType in simpleMartial:
+                                                for weapon in weaponType:
+                                                    print("-" + str(weapon[0]))
+                                        for i in range(quant):
+                                            choice = input("Choice? ")
+                                            onOff = True
+                                            while onOff == True: 
+                                                if choice in toolsMaster:
+                                                    for simpleMartial in weapons:
+                                                        for weaponType in simpleMartial:
+                                                            for weapon in weaponType:
+                                                                if choice == weapon[0]:
+                                                                    weapon[5] == True
+                                                    onOff = False
+                                                else: 
+                                                    print("That was incorrect. Please input a valid option.")
+                                else:
+                                    if tagIdentify == "=":
+                                        if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                            print("Choose one of the following tools:")
+                                            toolsChoices = []
+                                            for choice in tagInfo.split(",")[0].split("/"): 
+                                                print("-" + str(choice))
+                                                toolsChoices.append(choice)
+                                            choice = input("Choice? ")
+                                            onOff = True
+                                            while onOff == True: 
+                                                if choice in toolsChoices:
+                                                    tools.append(choice)
+                                                    onOff = False
+                                                else: 
+                                                    print("That was incorrect. Please input a valid option.")
+                                        else:
+                                            if len(tagInfo.split("/")) > 1:
+                                                quant = int(tagInfo.split("/")[1])
+                                            else:
+                                                quant = 1
+                                            print("Choose " + str(quant) + " of the following tools:")
+                                            for choice in toolsMaster: 
+                                                print("-" + str(choice))
+                                            for i in range(quant):
+                                                choice = input("Choice? ")
+                                                onOff = True
+                                                while onOff == True: 
+                                                    if choice in toolsMaster:
+                                                        tools.append(choice)
+                                                        onOff = False
+                                                    else: 
+                                                        print("That was incorrect. Please input a valid option.")
+                                    else:
+                                        if tagIdentify == "'":
+                                            #This one's a bit harder because of all the moving parts.
+                                            if len(tagInfo.split(",")[3].split("/")) > 1:
+                                                print("Choose one of the following spells:")
+                                                spellChoices = []
+                                                for choice in tagInfo.split(",")[3].split("/"): 
+                                                    print("-" + str(choice))
+                                                    spellChoices.append(choice)
+                                                choice = input("Choice? ")
+                                                onOff = True
+                                                while onOff == True: 
+                                                    if choice in spellChoices:
+                                                        fullSpell = tagInfo.split(",")[0] + "," + tagInfo.split(",")[1] + "," + tagInfo.split(",")[2] + "," + choice
+                                                        spells.append(choice)
+                                                        onOff = False
+                                                    else: 
+                                                        print("That was incorrect. Please input a valid option.")
+                                            else:
+                                                if len(tagInfo.split("/")) > 1:
+                                                    quant = int(tagInfo.split("/")[1])
+                                                else:
+                                                    quant = 1
+                                                print("Choose " + str(quant) + " of the following spells:")
+                                                for choice in spellLists[tagInfo.split(",")[2]][tagInfo.split(",")[1]]:
+                                                    print("-" + str(choice))
+                                                for i in range(quant):
+                                                    choice = input("Choice? ")
+                                                    onOff = True
+                                                    while onOff == True: 
+                                                        if choice in spellLists[tagInfo.split(",")[2]][tagInfo.split(",")[1]]:
+                                                            spells.append(choice)
+                                                            onOff = False
+                                                        else: 
+                                                            print("That was incorrect. Please input a valid option.")
+                                        else:
+                                            if tagIdentify == "[":
+                                                if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                                    print("Choose one of the following weapons:")
+                                                    skillChoices = []
+                                                    for choice in tagInfo.split(",")[0].split("/"): 
+                                                        print("-" + str(choice))
+                                                        skillChoices.append(choice)
+                                                    choice = input("Choice? ")
+                                                    onOff = True
+                                                    while onOff == True: 
+                                                        if choice in skillChoices:
+                                                            skills[choice] = True
+                                                            onOff = False
+                                                        else: 
+                                                            print("That was incorrect. Please input a valid option.")
+                                                else:
+                                                    if len(tagInfo.split("/")) > 1:
+                                                        quant = int(tagInfo.split("/")[1])
+                                                    else:
+                                                        quant = 1
+                                                    print("Choose " + str(quant) + " of the following weapons:")
+                                                    for skill in skills:
+                                                        print("-" + str(skill))
+                                                    for i in range(quant):
+                                                        choice = input("Choice? ")
+                                                        onOff = True
+                                                        while onOff == True: 
+                                                            if choice in skills:
+                                                                skills[choice] = True
+                                                                onOff = False
+                                                            else: 
+                                                                print("That was incorrect. Please input a valid option.")
+                                            else:
+                                                if tagIdentify == "%":
+                                                    if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                                        print("Choose one of the following fighting styles:")
+                                                        fightingStyleChoices = []
+                                                        for choice in tagInfo.split(",")[0].split("/"): 
+                                                            print("-" + str(choice))
+                                                            fightingStyleChoices.append(choice)
+                                                        choice = input("Choice? ")
+                                                        onOff = True
+                                                        while onOff == True: 
+                                                            if choice in fightingStyleChoices:
+                                                                fightingStyles.append(choice)
+                                                                onOff = False
+                                                            else: 
+                                                                print("That was incorrect. Please input a valid option.")
+                                                    else:
+                                                        if len(tagInfo.split("/")) > 1:
+                                                            quant = int(tagInfo.split("/")[1])
+                                                        else:
+                                                            quant = 1
+                                                        print("Choose " + str(quant) + " of the following fighting styles:")
+                                                        for choice in fightingStylesMaster: 
+                                                            print("-" + str(choice))
+                                                        for i in range(quant):
+                                                            choice = input("Choice? ")
+                                                            onOff = True
+                                                            while onOff == True: 
+                                                                if choice in fightingStylesMaster:
+                                                                    fightingStyles.append(choice)
+                                                                    onOff = False
+                                                                else: 
+                                                                    print("That was incorrect. Please input a valid option.")
+                                                else:
+                                                    if tagIdentify == "~":
+                                                        #back to the one's that don't quite make sense. But, ya know, it's fine. Perfectly fine.
+                                                        if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                                            print("Choose one of the following saving throw advantages:")
+                                                            savingThrowChoices = []
+                                                            for choice in tagInfo.split(",")[0].split("/"): 
+                                                                print("-" + str(choice))
+                                                                savingThrowChoices.append(choice)
+                                                            choice = input("Choice? ")
+                                                            onOff = True
+                                                            while onOff == True: 
+                                                                if choice in savingThrowChoices:
+                                                                    savingThrowProfs.append(choice)
+                                                                    onOff = False
+                                                                else: 
+                                                                    print("That was incorrect. Please input a valid option.")
+                                                        else:
+                                                            if len(tagInfo.split("/")) > 1:
+                                                                quant = int(tagInfo.split("/")[1])
+                                                            else:
+                                                                quant = 1
+                                                            print("Choose " + str(quant) + " of the following to have resistance to:")
+                                                            for choice in savingThrowsMaster: 
+                                                                print("-" + str(choice))
+                                                            for i in range(quant):
+                                                                choice = input("Choice? ")
+                                                                onOff = True
+                                                                while onOff == True: 
+                                                                    if choice in savingThrowsMaster:
+                                                                        savingThrowProfs.append(choice)
+                                                                        onOff = False
+                                                                    else: 
+                                                                        print("That was incorrect. Please input a valid option.")
+                                                    else:
+                                                        if tagIdentify == "|":
+                                                            print("Hey there! Pretty sure there is absolutely no reason why your character should be making a choice about getting an ability score improvement- you may need to fix this in your homebrew.")
+                                                            #There is no way for this to work and no way I'm coding it. 
+                                                        else:
+                                                            if tagIdentify == "$":
+                                                                if len(tagInfo.split("/")) > 2 or (len(tagInfo.split("/") > 1 and not (tagInfo.split("/")[0] == "Any"))):
+                                                                    print("Choose one of the following spells:")
+                                                                    spellChoices = []
+                                                                    for choice in tagInfo.split(",")[0].split("/"): 
+                                                                        print("-" + str(choice))
+                                                                        spellChoices.append(choice)
+                                                                    choice = input("Choice? ")
+                                                                    onOff = True
+                                                                    while onOff == True: 
+                                                                        if choice in spellChoices:
+                                                                            spellListExtra.append(choice)
+                                                                            onOff = False
+                                                                        else: 
+                                                                            print("That was incorrect. Please input a valid option.")
+                                                                else:
+                                                                    if len(tagInfo.split("/")) > 1:
+                                                                        print("Alright, you got some issues that must be fixed in the homebrew. I can already etll you that allowing anyone to choose any spells defeats the purpose of having different spellcasting classes- besides, it doesn't work right now. Sorry.")

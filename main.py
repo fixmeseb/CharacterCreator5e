@@ -1,5 +1,6 @@
 import os
 from wizardSpells import spells as wizardSpellList
+from wizardSpells import slots as wizardSlots
 
 from DnDLists import damageTypes
 from DnDLists import languagesDungeonsAndDragons 
@@ -13,6 +14,7 @@ from DnDLists import speeds as speedMaster
 from DnDLists import sights as sightsMaster
 from DnDLists import fightingStyles as fightingStylesMaster
 from DnDLists import abilityScores as abilityScoresMaster
+
 spellLists = {"Wizard":wizardSpellList}
 sources = ["Dungeons & Dragons Official", "Unearthed Arcana", "SW5e", "Homebrew"]
 
@@ -240,6 +242,20 @@ if (haveSubrace == True):
     subraceFeatures = subraceText.split("\n")
     file.close()
 
+classFeatures = []
+subclassFeatures = []
+
+for i in classes:
+    file = open(path + "\\Classes\\" + i + "\\" + i + "PARENT.txt", "r", )
+    classText = file.read()
+    classFeatures.append(classText.split("\n"))
+    file.close()
+    if len(i) > 2: 
+        file = open(path + "\\Classes\\" + i + "\\" + subclass + ".txt", "r")
+        subclassText = file.read()
+        subclassFeatures.append(subclassText.split("\n"))
+        file.close()
+
 for lineI in range(len(raceFeatures)-1):
     lineNum = lineI + 1
     line = raceFeatures[lineNum]
@@ -279,6 +295,82 @@ for lineI in range(len(raceFeatures)-1):
 for lineI in range(len(subraceFeatures)-1):
     lineNum = lineI + 1
     line = subraceFeatures[lineNum]
+    if ":C:" in line:
+        for i in range(2, len(line.split("-"))):
+            choices.append(i)
+    else:
+        if ":F:" in line:
+            for i in range(2, len(line.split("-"))):
+                choices.append(i)
+        else:
+            levelRequire = line[1:2:]
+            if totalLevel >= int(levelRequire):
+                levelTags = line.split("-")
+                for i in range(2, len(levelTags)):
+                    keyTag = levelTags[i]
+                    tagIdentify = keyTag[0:1:]
+                    tagInfo = keyTag[1:len(keyTag)-1:]
+                    print("tagInfo: " + keyTag)
+                    if tagIdentify == "_":
+                        if len(tagInfo.split(",")) > 1:
+                            lookUpTable[tagIdentify][tagInfo.split(",")[1]] = tagInfo.split(",")[0]
+                        else:
+                            lookUpTable[tagIdentify]["Walking"] = tagInfo
+                    else:
+                        if tagIdentify == "+":
+                            tagInfo = tagInfo[1:len(tagInfo)-1:]
+                            lookUpTable[tagIdentify] = tagInfo
+                        else:
+                            if tagIdentify == "|":
+                                lookUpTable[tagIdentify] +=1
+                            else:
+                                if tagIdentify == "<":
+                                    abilityScoreSplit = tagInfo.split(",")
+                                    scores[abilityScoreSplit[0]]+=int(abilityScoreSplit[1])
+                                else:
+                                    lookUpTable[tagIdentify].append(tagInfo)
+
+for lineI in range(len(classFeatures)-1):
+    lineNum = lineI + 1
+    line = classFeatures[lineNum]
+    if ":C:" in line:
+        for i in range(2, len(line.split("-"))):
+            choices.append(i)
+    else:
+        if ":F:" in line:
+            for i in range(2, len(line.split("-"))):
+                choices.append(i)
+        else:
+            levelRequire = line[1:2:]
+            if totalLevel >= int(levelRequire):
+                levelTags = line.split("-")
+                for i in range(2, len(levelTags)):
+                    keyTag = levelTags[i]
+                    tagIdentify = keyTag[0:1:]
+                    tagInfo = keyTag[1:len(keyTag)-1:]
+                    print("tagInfo: " + keyTag)
+                    if tagIdentify == "_":
+                        if len(tagInfo.split(",")) > 1:
+                            lookUpTable[tagIdentify][tagInfo.split(",")[1]] = tagInfo.split(",")[0]
+                        else:
+                            lookUpTable[tagIdentify]["Walking"] = tagInfo
+                    else:
+                        if tagIdentify == "+":
+                            tagInfo = tagInfo[1:len(tagInfo)-1:]
+                            lookUpTable[tagIdentify] = tagInfo
+                        else:
+                            if tagIdentify == "|":
+                                lookUpTable[tagIdentify] +=1
+                            else:
+                                if tagIdentify == "<":
+                                    abilityScoreSplit = tagInfo.split(",")
+                                    scores[abilityScoreSplit[0]]+=int(abilityScoreSplit[1])
+                                else:
+                                    lookUpTable[tagIdentify].append(tagInfo)
+
+for lineI in range(len(subclassFeatures)-1):
+    lineNum = lineI + 1
+    line = subclassFeatures[lineNum]
     if ":C:" in line:
         for i in range(2, len(line.split("-"))):
             choices.append(i)

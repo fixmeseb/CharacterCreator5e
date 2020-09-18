@@ -10,4 +10,47 @@ level7 = ["Delayed Blast Fireball", "Etherealness, Finger of Death", "Forcecage"
 level8 = ["Antimagic Field", "Antipathy/Sympathy", "Clone", "Control Weather", "Demiplane", "Dominate Monster", "Feeblemind", "Incendiary Cloud", "Maze", "Mind Blank", "Power Word Stun", "Sunburst", "Telepathy"]
 level9 = ["Astral Projection", "Foresight", "Gate", "Imprisonment", "Meteor Swarm", "Power Word Kill", "Prismatic Wall", "Shapechange", "Time Stop", "True Polymorph", "Weird", "Wish"]
 
+lvl1 =  [3, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+lvl2 =  [3, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+lvl3 =  [3, 4, 2, 0, 0, 0, 0, 0, 0, 0]
+lvl4 =  [4, 4, 3, 0, 0, 0, 0, 0, 0, 0]
+lvl5 =  [4, 4, 3, 2, 0, 0, 0, 0, 0, 0]
+lvl6 =  [4, 4, 3, 3, 0, 0, 0, 0, 0, 0]
+lvl7 =  [4, 4, 3, 3, 1, 0, 0, 0, 0, 0]
+lvl8 =  [4, 4, 3, 3, 2, 0, 0, 0, 0, 0]
+lvl9 =  [4, 4, 3, 3, 3, 1, 0, 0, 0, 0]
+lvl10 = [5, 4, 3, 3, 3, 2, 0, 0, 0, 0]
+lvl11 = [5, 4, 3, 3, 3, 2, 1, 0, 0, 0]
+lvl12 = [5, 4, 3, 3, 3, 2, 1, 0, 0, 0]
+lvl13 = [5, 4, 3, 3, 3, 2, 1, 1, 0, 0]
+lvl14 = [5, 4, 3, 3, 3, 2, 1, 1, 0, 0]
+lvl15 = [5, 4, 3, 3, 3, 2, 1, 1, 1, 0]
+lvl16 = [5, 4, 3, 3, 3, 2, 1, 1, 1, 0]
+lvl17 = [5, 4, 3, 3, 3, 2, 1, 1, 1, 1]
+lvl18 = [5, 4, 3, 3, 3, 3, 1, 1, 1, 1]
+lvl19 = [5, 4, 3, 3, 3, 3, 2, 1, 1, 1]
+lvl20 = [5, 4, 3, 3, 3, 3, 2, 2, 1, 1]
+
+slots= {
+    1: lvl1,
+    2: lvl2,
+    3: lvl3,
+    4: lvl4,
+    5: lvl5,
+    6: lvl6,
+    7: lvl7,
+    8: lvl8,
+    9: lvl9,
+    10: lvl10,
+    11: lvl11,
+    12: lvl12,
+    13: lvl13,
+    14: lvl14,
+    15: lvl15,
+    16: lvl16,
+    17: lvl17,
+    18: lvl18,
+    19: lvl19,
+    20: lvl20,
+}
 spells = [cantrips, level1, level2, level3, level4, level5, level6, level7, level8, level9]

@@ -19,6 +19,8 @@ Skills: [SKILL,QUANTITY]. SKILL is the skill (or skills, seperated by "/") and Q
 +dx+- the hit dice of the class.
 ~SAVINGTHROW~- SAVINGTHROW is the ability that the the class is proficient in saving throws for.
 |ABILITY|- Signifies an ability score improvement/feat choice. 
+?ModifierTag?- Signifies a varying value. ModifierTag is either equal to an ability score or the class level. 
+!FORMULA!- Signifies a variable quantity, typically has ?ModifierTag? to indictate the location of the variable. 
 Other:
 $SPELL,SPELL_LEVEL$- for adding spells to spellcasting/pact magic
 
